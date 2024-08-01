@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shell Swap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .email-template {
+            margin-top: 20px;
+            width: 60%;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .input-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .input-container label {
+            margin: 5px 0;
+        }
+        .input-container input, .input-container select {
+            margin: 5px 0 15px;
+            padding: 5px;
+            width: 300px;
+        }
+        .template-button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .template-button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <button id="shellSwapButton">Shell Swap</button>
+    <div id="inputContainer" class="input-container" style="display:none;">
+        <label for="userName">User Name:</label>
+        <input type="text" id="userName">
+        <label for="oldLaptopSerial">Old Laptop Serial Number:</label>
+        <input type="text" id="oldLaptopSerial">
+        <label for="newLaptopSerial">New Laptop Serial Number:</label>
+        <input type="text" id="newLaptopSerial">
+        <label for="employeeId">Employee ID:</label>
+        <input type="text" id="employeeId">
+        <label for="issue">Issue:</label>
+        <select id="issue">
+            <option value="water damage">Water Damage</option>
+            <option value="no post">No Post</option>
+        </select>
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+        <button id="generateButton">Generate Email Templates</button>
+    </div>
+    <div id="emailTemplates"></div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
